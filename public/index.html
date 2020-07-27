@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>TO DO</h1>
+
+      <form v-on:submit.prevent="saveNewItem">
+        <fieldset>
+          <legend>More to do?</legend>
+          <input id="txt-input" type="text" v-model="newItem" />
+          <input id="btn-submit" type="submit" name="Add" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

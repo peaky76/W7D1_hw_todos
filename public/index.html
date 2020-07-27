@@ -17,8 +17,10 @@
 
       <ul>
         <li class="to-do-item" v-for="(item, index) in toDoList">
-          {{item.description}}
-          <fieldset id="select-priority">
+          <span :class="item.isDone ? 'done' : 'not-done'"
+            >{{item.description}}</span
+          >
+          <fieldset v-if="!item.isDone" id="select-priority">
             <div class="radio-container">
               <input
                 type="radio"

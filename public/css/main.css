@@ -34,6 +34,18 @@ li {
   padding: 0;
 }
 
+.done {
+  color: 52528c;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.not-done {
+  color: #231123;
+  text-decoration: none;
+  font-style: normal;
+}
+
 input[type="radio"] {
   display: none;
 }

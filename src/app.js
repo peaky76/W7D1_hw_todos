@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     el: "#app",
     data: {
       toDoList: [
-        { description: "Clean bathroom", priority: "low" },
-        { description: "Have a few beers", priority: "high" },
-        { description: "Change baby's nappy", priority: "low" },
+        { description: "Clean bathroom", priority: "low", isDone: true },
+        { description: "Have a few beers", priority: "high", isDone: false },
+        { description: "Change baby's nappy", priority: "low", isDone: false },
       ],
       newItem: "",
       priority: "",

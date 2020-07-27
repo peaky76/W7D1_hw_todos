@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { description: "Change baby's nappy", priority: "low" },
       ],
       newItem: "",
+      priority: "",
     },
     methods: {
       addNewItem: function () {

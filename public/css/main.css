@@ -57,9 +57,21 @@ input[type="radio"] {
   border-radius: 10px;
   font-size: 0.8em;
   text-transform: uppercase;
+  opacity: 25%;
+}
+
+.low {
+  background-color: green;
+}
+
+.med {
+  background-color: orange;
+}
+
+.high {
   background-color: red;
 }
 
 input[type="radio"]:checked + label {
-  background-color: #ebff43;
+  opacity: 100%;
 }

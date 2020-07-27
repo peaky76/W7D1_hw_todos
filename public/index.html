@@ -27,7 +27,7 @@
                 v-model="priority"
                 value="low"
               />
-              <label :for="'low-' + index">
+              <label class="low" :for="'low-' + index">
                 <span>Low</span>
               </label>
             </div>
@@ -39,7 +39,7 @@
                 v-model="priority"
                 value="med"
               />
-              <label :for="'med-' + index">
+              <label class="med" :for="'med-' + index">
                 <span>Medium</span>
               </label>
             </div>
@@ -52,7 +52,7 @@
                 v-model="priority"
                 value="high"
               />
-              <label :for="'high-' + index">
+              <label class="high" :for="'high-' + index">
                 <span>High</span>
               </label>
             </div>

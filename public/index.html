@@ -10,7 +10,11 @@
     <div id="app">
       <h1>TO DO</h1>
 
-      <form v-on:submit.prevent="saveNewItem">
+      <ul>
+        <li v-for="item in toDoList">{{item.description}}</li>
+      </ul>
+
+      <form v-on:submit.prevent="addNewItem">
         <fieldset>
           <legend>More to do?</legend>
           <input id="txt-input" type="text" v-model="newItem" />

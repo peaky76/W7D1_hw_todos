@@ -1,4 +1,5 @@
-body {
+body,
+button {
   color: #231123;
   background-color: #7c9eb2;
   font-size: 20px;
@@ -25,25 +26,36 @@ li {
   align-items: center;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 3px solid #372554;
+  border: 1px solid #c0c0c0;
+}
+
+hr {
+  border-color: #c0c0c0;
+  margin: 1rem 0;
+}
+
+.description {
+  border: none;
+}
+
+.description:focus {
+  outline: none;
+}
+
+.done {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.not-done {
+  text-decoration: none;
+  font-style: normal;
 }
 
 #select-priority {
   border: none;
   margin: 0;
   padding: 0;
-}
-
-.done {
-  color: 52528c;
-  text-decoration: line-through;
-  font-style: italic;
-}
-
-.not-done {
-  color: #231123;
-  text-decoration: none;
-  font-style: normal;
 }
 
 input[type="radio"] {

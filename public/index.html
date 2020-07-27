@@ -17,9 +17,13 @@
 
       <ul>
         <li class="to-do-item" v-for="(item, index) in toDoList">
-          <span :class="item.isDone ? 'done' : 'not-done'"
-            >{{item.description}}</span
+          <button
+            class="description"
+            :class="item.isDone ? 'done' : 'not-done'"
+            @click="markDone(index)"
           >
+            {{item.description}}
+          </button>
           <fieldset v-if="!item.isDone" id="select-priority">
             <div class="radio-container">
               <input
@@ -61,6 +65,8 @@
           </fieldset>
         </li>
       </ul>
+
+      <hr />
 
       <form v-on:submit.prevent="addNewItem">
         <fieldset>

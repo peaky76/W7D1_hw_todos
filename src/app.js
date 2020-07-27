@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         this.newItem = "";
       },
+
+      markDone: function (index) {
+        this.toDoList[index].isDone = !this.toDoList[index].isDone;
+      },
     },
   });
 });

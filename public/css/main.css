@@ -20,7 +20,46 @@ ul {
 }
 
 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 3px solid #372554;
+}
+
+#select-priority {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-container {
+  display: inline-block;
+  height: 100%;
+  width: 5em;
+  text-align: center;
+}
+
+.radio-container input {
+  height: 100%;
+  width: 100%;
+}
+.radio-container label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background-color: red;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ebff43;
 }

@@ -16,13 +16,47 @@
       <h1>to do...</h1>
 
       <ul>
-        <li class="to-do-item" v-for="item in toDoList">
+        <li class="to-do-item" v-for="(item, index) in toDoList">
           {{item.description}}
-          <!-- <fieldset id="select-priority">
-            <input type="radio" id="low" v-model="priority" value="low" />
-            <input type="radio" id="med" v-model="priority" value="med" />
-            <input type="radio" id="high" v-model="priority" value="high" />
-          </fieldset> -->
+          <fieldset id="select-priority">
+            <div class="radio-container">
+              <input
+                type="radio"
+                :id="'low-' + index"
+                :name="'priority-' + index"
+                v-model="priority"
+                value="low"
+              />
+              <label :for="'low-' + index">
+                <span>Low</span>
+              </label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                :id="'med-' + index"
+                :name="'priority-' + index"
+                v-model="priority"
+                value="med"
+              />
+              <label :for="'med-' + index">
+                <span>Medium</span>
+              </label>
+            </div>
+
+            <div class="radio-container">
+              <input
+                type="radio"
+                :id="'high-' + index"
+                :name="'priority-' + index"
+                v-model="priority"
+                value="high"
+              />
+              <label :for="'high-' + index">
+                <span>High</span>
+              </label>
+            </div>
+          </fieldset>
         </li>
       </ul>
 
